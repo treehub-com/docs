@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{page.title}}</title>
     <link href="/assets/css/style.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
     <style>
       body {
         display: flex;
@@ -48,5 +49,8 @@
         {{content}}
       </article>
     </main>
+    <script>
+      anchors.add();
+    </script>
   </body>
 </html>
