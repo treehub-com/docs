@@ -1,0 +1,18 @@
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "collection"
+      title: "Treehub"
+collections:
+  packages:
+    output: true
+  # desktop:
+  #   output: true
+  # web:
+  #   output: true
+  # ios:
+  #   output: true
+  # android:
+  #   output: true

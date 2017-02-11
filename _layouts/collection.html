@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{page.title}}</title>
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        min-height: 100vh;
+      }
+      main {
+        display: flex;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+      }
+      nav a,
+      nav a:hover,
+      nav a:visited {
+        color: blue;
+        text-decoration: none;
+      }
+      nav a[selected] {
+        color: black;
+      }
+      article {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        {% assign items = site[page.collection] | sort: 'order' %}
+        {% for item in items %}
+          <a href="{{ item.url }}" {% if item.url == page.url %}selected{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+      <article>
+        {{content}}
+      </article>
+    </main>
+  </body>
+</html>
