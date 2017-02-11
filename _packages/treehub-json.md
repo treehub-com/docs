@@ -16,12 +16,8 @@ order: 50
   "taskbar": [
     "my-example-taskbar"
   ],
-  "page": [
-    "my-example",
-  ],
-  "aside": [
-    "my-example-aside"
-  ],
+  "page": "my-example",
+  "aside": "my-example-aside",
   "route": "./route.js", // Will be available under POST /my-example/*
 }
 ````
