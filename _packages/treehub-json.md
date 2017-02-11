@@ -1,5 +1,5 @@
 ---
-title: Treehub.json
+title: treehub.json
 order: 50
 ---
 
