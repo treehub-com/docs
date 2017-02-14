@@ -41,7 +41,8 @@ main {
   display: flex;
   flex: 1;
   align-self: center;
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   padding: 1rem;
 }
 
