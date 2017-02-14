@@ -12,9 +12,23 @@ order: 0
 |     |                           |                   |
 |     |                           |                   |
 |     |                           |                   |
+|     |                           |                   |
 | Nav |            Page           |       Aside       |
+|     |                           |                   |
 |     |                           |                   |
 |     |                           |                   |
 |     |                           |                   |
 +-----------------------------------------------------+
 ````
+
+## Taskbar
+Notification and status area
+
+## Nav
+Page navigation
+
+## Page
+The primary interface
+
+## Aside
+A secondary interface used to support the displayed page
