@@ -4,11 +4,12 @@ defaults:
       path: ""
     values:
       layout: "collection"
-      title: "Treehub"
+      title: "Documentation"
 collections:
+  app:
+    output: true
   packages:
     output: true
-    description: "Packages o stuff"
   # desktop:
   #   output: true
   # web:
