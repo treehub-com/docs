@@ -19,6 +19,10 @@ order: 0
 |     |                           |                   |
 |     |                           |                   |
 +-----------------------------------------------------+
+
++-----------------------------------------------------+
+|                       Server                        |
++-----------------------------------------------------+
 ````
 
 ## Taskbar
@@ -32,3 +36,6 @@ The primary interface
 
 ## Aside
 A secondary interface used to support the displayed page
+
+## Server
+A local server hosting the spaces api and custom package routes
