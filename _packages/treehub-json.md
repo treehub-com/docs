@@ -7,18 +7,25 @@ order: 50
 ````javascript
 {
   "name": "my-example", // Required
-  "version": "1.0.0", // Required. Please follow semver :)
-  "components": [
+  "description": "An example package", // Required
+  "components": [ // Components to fetch on load. These will be executed before the app is initialized, so don't do work in them
     "./components.js"
   ],
-  "nav": [
-    "my-example-nav"
+  "files": [ // Additional files you want included
+    "./image.png"
   ],
-  "taskbar": [
-    "my-example-taskbar"
-  ],
-  "page": "my-example",
-  "aside": "my-example-aside",
   "route": "./route.js", // Will be available under POST /my-example/*
+  "provides": { // Tells other packages what you provide
+    "app": { // Provide app level things
+      "nav": [
+        "my-example-nav"
+      ],
+      "taskbar": [
+        "my-example-taskbar"
+      ],
+      "page": "my-example",
+      "aside": "my-example-aside"
+    }
+  }
 }
 ````
